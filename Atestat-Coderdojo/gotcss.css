@@ -5,11 +5,6 @@ body {
 }
 
 
-header{
-    background-color: #B9540C;
-    margin-top: 0;
-    padding-top: 1px;
-}
 
 
 
@@ -28,11 +23,19 @@ header{
     padding: 0;
 }
 
-.navbar-item a {
+.navbar-item a,p {
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 14px;
     transition: color 0.3s;
+}
+.navbar-list h6{
+    color: #fff;
+    font-size: 14px;
+    transition: color 0.3s;
+    font-weight: normal;
+    text-align: left;
+
 }
 
 .navbar-item a:hover {
@@ -44,25 +47,9 @@ header{
     width: 80px;
     height: 80px;
 }
-.sus {
-    display: flex;
-    align-items: center; /* Align vertically centered */
-}
 
-.sus h4 {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    font-size: 24px;
-    margin-top: 10px;
-    
-}
 
-.sus p {
-    margin: 0; /* Remove default margin */
-    font-size: 16px; /* Adjust font size for p */
-}
+
 
 
 
@@ -81,9 +68,87 @@ footer {
 .copyright {
     font-size: 14px;
 }
-.icons {
-    padding: 20px 0;
-  }
 
 
 
+
+
+
+.carousel{
+    width: 1000px;
+    height: 400px;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(https://cdn.gencraft.com/prod/user/47ab1900-a9c0-433c-aa17-52e9eaae5bb0/7ad87115-6ed5-4e50-8b2f-db57dc1bc183/images/image0_0_watermark.jpg?Expires=1694257650&Signature=E2QlrrMw3SBkpIaW2K7aynU-kKve96UXjnUqeMs5AQq-F7tV~w7P~2Hb7D6b5ZANMDhDv2kTG55BJFvLQNiaxycoU5MHx80fCameB8xW86-6nHFu3DsubNACCkkdqqySK6dJRbBqTCm-tmzP0B9Gmn5yvYTyYyWppVpM0ZIqZ52Wk~e~7B73aMzSKYrb8~kp7MVMq-0tA7YMB8KQEglzHHUNsgFZ7jQdHnEdqC41mrD0fejmF4Kve0d6p7N22mcBILEnozLXk9rSSbqH0UdqLtIhZnVlOD76lhskGbViV43GutavrEOP0HbAOJCWXZyflKvF9~-Ibhyf6dB0jErLmg__&Key-Pair-Id=K3RDDB1TZ8BHT8);
+
+}
+.fade{
+    -webkit-animation: 1.5s fade;
+    animation: 1.5s fade;
+}
+@-webkit-keyframes fade{
+    from{opacity: 0.4}
+    to{opacity: 1}
+}
+@keyframes fade{
+    from{opacity: 0.4}
+    to{opacity: 1}
+}
+
+.voucher{
+   
+    display: grid;
+    columns: 1;
+    justify-content: center;
+    background-color: #FCFEF0;
+
+}
+
+
+
+
+.banners img{
+ height: 100px;
+ width: 100px;
+
+}
+.banners{
+    background-color: #C38D5F;
+    justify-content: center;
+}
+.banners table, th, td {
+    
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+ }
+ .banners table{
+    border-spacing: 150px 0px;
+    border-collapse: separate;
+ }
+ .banners td,th{
+    border-spacing: 0 15px;
+    padding: 8px;
+ }
+ .banners p{
+    color: black;
+    font-weight: bold;
+ }
+
+
+
+
+
+
+
+
+
+
+
+ h4{
+    text-align: center;
+    color: black;
+ }
