@@ -1,24 +1,60 @@
 .got-box {
-    background-color: #221f1f;
-    color: #fff;
-    border: 2px solid #a79683;
-    border-radius: 10px;
-    width: 300px;
-    height: 300px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: #221f1f;
+  color: #fff;
+  border: 2px solid #a79683;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.3s;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
-  
-  .box-image {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .box-image img {
-    transition: transform 0.3s;
-  }
-  
-  .box-image:hover img {
-    transform: scale(1.2);
-  }
+
+
+.column-container {
+  display: flex;
+  justify-content: space-between; /* Distribute columns evenly */
+  width: 900px; /* Total width for three columns */
+  margin: auto;
+  column-gap: 20px;
+}
+
+.got-box:hover {
+  background-color: #321f1f; /* Change to a slightly darker color on hover */
+  transform: scale(1.05); /* Scale the box up by 5% on hover */
+}
+
+.got-banner {
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  border: 2px solid #a79683;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.got-banner h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 10px;
+}
+
+.got-content {
+  font-size: 16px;
+}
+
+.got-content p {
+  margin: 0;
+  padding: 10px;
+}
+.got-banner img{
+  width: 100px;
+  height: fit-content;
+}
