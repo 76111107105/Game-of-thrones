@@ -17,10 +17,14 @@ Site-ul trebuie sa aiba :
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Got-home</title>
+    <title>DracoBazaar</title>
     <link rel="stylesheet" href="gotcss.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="gotbox.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
-    <script src="gotjs.js" defer></script>
+    <script src="homeslides.js" defer></script>
+    
+
 
 </head>
 
@@ -32,11 +36,10 @@ Site-ul trebuie sa aiba :
         <nav class="navbar">
             <ul class="navbar-list">
                 <h6>+40728353769</h6>
-                <li class="navbar-logo"><img
+                <li class="navbar-logo"><a href="http://127.0.0.1:5500/Atestat-Coderdojo/Got-home.html"><img
                         src="https://cdn.discordapp.com/attachments/1037047257763156081/1144609443506573353/png-clipart-white-dragon-logo-chinese-dragon-here-be-dragons-dragon-dragon-logo-thumbnail-removebg-preview.png">
-                </li>
+                    </a></li>
                 <p>DracoBazaar</p>
-                <li class="navbar-item"><a href="http://127.0.0.1:5500/Atestat-Coderdojo/Got-home.html">Home</a></li>
                 <li class="navbar-item"><a href="http://127.0.0.1:5500/Atestat-Coderdojo/Tresure.html">Treasures</a></li>
                 <li class="navbar-item"><a href="http://127.0.0.1:5500/Atestat-Coderdojo/Our%20Legend.html">Our Legend</a></li>
                 <li class="navbar-item"><a href="http://127.0.0.1:5500/Atestat-Coderdojo/Shopping%20Cart.html">Shopping Cart</a></li>
@@ -47,7 +50,23 @@ Site-ul trebuie sa aiba :
 
 
 
-    <div class="carousel fade"></div>
+    <section aria-label="Newest Photos">
+        <div class="carousel" data-carousel>
+          <button class="carousel-button prev" data-carousel-button="prev">&#8610;</button>
+          <button class="carousel-button next" data-carousel-button="next">&#8611;</button>
+          <ul data-slides>
+            <li class="slide" data-active>
+              <img src="https://i.ytimg.com/vi/04z69Cv52e4/maxresdefault.jpg" alt="Image #1">
+            </li>
+            <li class="slide">
+              <img src="dracobazaar (2).jpeg" alt="Image #2">
+            </li>
+            <li class="slide">
+              <img src="https://www.anbmedia.com/wp-content/uploads/2019/05/McFarlane-Toys-Game-Of-Thrones-Figures-Dragon-May-2019-1024x576.jpg" alt="Image #3">
+            </li>
+          </ul>
+        </div>
+      </section>
 
     <div class="voucher">
         <img src="https://storage.googleapis.com/dam-dun-prd-85c8a53.dun.prd.v8.commerce.mi9cloud.com/Images/10-off-50/Page/10-off-50-Banner-M.jpg">
@@ -68,8 +87,13 @@ Site-ul trebuie sa aiba :
     </table>
 </div>
 
-<h4>Seasonal Items</h4>
-
+<div class="got-box">
+    <div class="box-image">
+      <img src="https://m.media-amazon.com/images/I/41+-eKB39zL._UF1000,1000_QL80_.jpg" alt="Product 1">
+    </div>
+    <h3>Product 1</h3>
+    <p>Description of Product 1</p>
+  </div>
 
 
     <footer>

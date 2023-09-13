@@ -1,0 +1,24 @@
+.got-box {
+    background-color: #221f1f;
+    color: #fff;
+    border: 2px solid #a79683;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+  
+  .box-image {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .box-image img {
+    transition: transform 0.3s;
+  }
+  
+  .box-image:hover img {
+    transform: scale(1.2);
+  }

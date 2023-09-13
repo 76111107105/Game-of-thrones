@@ -8,45 +8,7 @@ body {
 
 
 
-.navbar {
-    background-color: #331C0E;
-    padding: 10px 0;
-}
 
-.navbar-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-item a,p {
-    text-decoration: none;
-    color: #fff;
-    font-size: 14px;
-    transition: color 0.3s;
-}
-.navbar-list h6{
-    color: #fff;
-    font-size: 14px;
-    transition: color 0.3s;
-    font-weight: normal;
-    text-align: left;
-
-}
-
-.navbar-item a:hover {
-    color: #FFF190;
-}
-
-
-.navbar-logo img {
-    width: 80px;
-    height: 80px;
-}
 
 
 
@@ -72,29 +34,6 @@ footer {
 
 
 
-
-
-.carousel{
-    width: 1000px;
-    height: 400px;
-    background-position: center;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url(https://cdn.gencraft.com/prod/user/47ab1900-a9c0-433c-aa17-52e9eaae5bb0/7ad87115-6ed5-4e50-8b2f-db57dc1bc183/images/image0_0_watermark.jpg?Expires=1694257650&Signature=E2QlrrMw3SBkpIaW2K7aynU-kKve96UXjnUqeMs5AQq-F7tV~w7P~2Hb7D6b5ZANMDhDv2kTG55BJFvLQNiaxycoU5MHx80fCameB8xW86-6nHFu3DsubNACCkkdqqySK6dJRbBqTCm-tmzP0B9Gmn5yvYTyYyWppVpM0ZIqZ52Wk~e~7B73aMzSKYrb8~kp7MVMq-0tA7YMB8KQEglzHHUNsgFZ7jQdHnEdqC41mrD0fejmF4Kve0d6p7N22mcBILEnozLXk9rSSbqH0UdqLtIhZnVlOD76lhskGbViV43GutavrEOP0HbAOJCWXZyflKvF9~-Ibhyf6dB0jErLmg__&Key-Pair-Id=K3RDDB1TZ8BHT8);
-
-}
-.fade{
-    -webkit-animation: 1.5s fade;
-    animation: 1.5s fade;
-}
-@-webkit-keyframes fade{
-    from{opacity: 0.4}
-    to{opacity: 1}
-}
-@keyframes fade{
-    from{opacity: 0.4}
-    to{opacity: 1}
-}
 
 .voucher{
    
@@ -141,14 +80,102 @@ footer {
 
 
 
-
-
-
-
-
-
-
  h4{
     text-align: center;
     color: black;
  }
+
+
+
+
+/*The photos*/
+ *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .carousel {
+    width: 1519px;
+    height: 650px;
+     /*width: 98.9vw;
+    height: 41.75vw;*/
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+  }
+  
+  .slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+  }
+  
+  .carousel-button:hover,
+  .carousel-button:focus {
+    color: white;
+  }
+  
+
+  
+  .carousel-button.prev {
+    left: 1rem;
+  }
+  
+  .carousel-button.next {
+    right: 1rem;
+  }
+
+
+
+
+
+
+  .box {
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
