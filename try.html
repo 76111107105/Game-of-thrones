@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .image-container img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            transition: transform 0.2s;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <script>
+        function changeImage(element) {
+            var oldSrc = element.src;
+            var newSrc = element.getAttribute('data-hover-src');
+            element.src = newSrc;
+            element.setAttribute('data-hover-src', oldSrc);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="image-container">
+        <img src="https://cdn.marvel.com/content/1x/loki_lob_crd_04.jpg" alt="Image 1" data-hover-src="https://tsukiblade.co/cdn/shop/files/0Q4A1092_360x.jpg?v=1690146376"
+            onmouseover="changeImage(this)" onmouseout="changeImage(this)">
+        
+    </div>
+</body>
+
+</html>
