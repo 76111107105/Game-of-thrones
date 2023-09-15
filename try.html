@@ -19,6 +19,25 @@
         .image-container img:hover {
             transform: scale(1.1);
         }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .column {
+            flex: 1;
+        }
+
+        .center-container {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            /* Set the height to match the viewport */
+        }
     </style>
     <script>
         function changeImage(element) {
@@ -32,9 +51,17 @@
 
 <body>
     <div class="image-container">
-        <img src="https://cdn.marvel.com/content/1x/loki_lob_crd_04.jpg" alt="Image 1" data-hover-src="https://tsukiblade.co/cdn/shop/files/0Q4A1092_360x.jpg?v=1690146376"
+        <img src="https://cdn.marvel.com/content/1x/loki_lob_crd_04.jpg" alt="Image 1"
+            data-hover-src="https://tsukiblade.co/cdn/shop/files/0Q4A1092_360x.jpg?v=1690146376"
             onmouseover="changeImage(this)" onmouseout="changeImage(this)">
-        
+
+    </div>
+    <div class="center-container">
+        <div class="container">
+            <div class="column">Column 1</div>
+            <div class="column">Column 2</div>
+            <div class="column">Column 3</div>
+        </div>
     </div>
 </body>
 
