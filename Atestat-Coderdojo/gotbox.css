@@ -20,6 +20,8 @@
   width: 900px; /* Total width for three columns */
   margin: auto;
   column-gap: 20px;
+
+  grid-template-columns: repeat(4, 223px);
 }
 
 .got-box:hover {
