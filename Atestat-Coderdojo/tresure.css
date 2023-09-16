@@ -75,3 +75,20 @@
 .bi-plus-lg{
     color: green;
 }
+
+
+
+.shop{
+    margin-top: 30px;
+}
+
+.navbar-list img{
+    width: 50px;
+    height: 50px;
+    color: #fff;
+
+}
+.navbar-list img:hover{
+    background-size: 70px;
+    background-color: rgb(255, 255, 255);
+}
