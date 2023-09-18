@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang=”en”>
+<head>
+ <title>
+  JavaScript Validations
+ </title>
+</head>
+<body>
+<h1>
+TalkersCode – JavaScript Validations
+</h1>
+<h2>
+JavaScript login page with database
+</h2>
+<form action="next_page.php" method="post">
+  <div class="container">
+    <label for="username">
+ <b>
+  Enter Username Here
+ </b>
+   </label>
+    <input type="text" placeholder=" Username " name="username" required>
+    <label for="password">
+ <b>
+  Enter Password here
+ </b>
+     </label>
+    <input type="password" placeholder=" Password" name="password" required>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+    <button type="submit">
+ Sign in button
+    </button>
+  </div>
+  <div class="container" >
+    <button type="button" class="cncl">
+ Cancel
+    </button>
+    <span class="password"><a href="forgotpass.html">Forgot password?</a></span>
+  </div>
+</form>
+<script>
+var connection = mysql.createConnection({
+ host : 'hostname',
+ user : 'username',
+ password : 'password',
+ database : 'databaseName'
+});
+</script>
+</body>
+</html>
