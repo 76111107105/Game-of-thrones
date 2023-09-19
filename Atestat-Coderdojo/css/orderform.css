@@ -1,0 +1,89 @@
+/* Container */
+.container {
+    background-image: url("https://img.freepik.com/free-photo/red-grunge-background_1048-8960.jpg?w=900&t=st=1695163519~exp=1695164119~hmac=c8b803e8a475798985becc8e80d9f25bfe593d1c27c5511ce7046baeba28c5c0");
+    background-size:contain; 
+    color: #fff;
+    padding: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Title */
+  .title h2 {
+    color: #e54141; /* Targaryen red */
+    font-size: 24px;
+  }
+  
+  /* Form Label */
+  label span {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Form Input */
+  input[type="text"],
+  select,
+  input[type="tel"],
+  input[type="email"] {
+    width: 1000px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #e54141; /* Targaryen red */
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  input[type="text"]::placeholder,
+  select::placeholder {
+    color: #999;
+  }
+  
+  /* Country Select */
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('path-to-arrow-icon.png'); /* Replace with your arrow icon */
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 30px;
+  }
+  
+  /* Payment Options */
+  .Yorder {
+    background-color: #e54141; /* Targaryen red */
+    padding: 20px;
+    border-radius: 5px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .Yorder div {
+    margin-bottom: 10px;
+  }
+  
+  .Yorder input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .Yorder button {
+    background-color: #000;
+    color: #e54141; /* Targaryen red */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+    /* Add more responsive styles here */
+  }
+  

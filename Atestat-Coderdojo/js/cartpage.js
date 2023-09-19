@@ -45,9 +45,7 @@ let generateCartItems = () => {
     ShoppingCart.innerHTML = ``;
     label.innerHTML = `
     <h2>Cart is Empty</h2>
-    <a href="index.html">
-      <button class="HomeBtn">Back to home</button>
-    </a>
+    
     `;
   }
 };
@@ -122,7 +120,7 @@ let TotalAmount = () => {
     // console.log(amount);
     label.innerHTML = `
     <h2>Total Bill : $ ${amount}</h2>
-    <button class="checkout">Checkout</button>
+    <a href="http://127.0.0.1:5500/Atestat-Coderdojo/CheckOut.html"><button class="checkout">Checkout</button></a>
     <button onclick="clearCart()" class="removeAll">Clear Cart</button>
     `;
   } else return;
