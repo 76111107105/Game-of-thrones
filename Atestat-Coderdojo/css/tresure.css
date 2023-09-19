@@ -1,9 +1,17 @@
+
+body{
+    background-image: url("https://img.freepik.com/free-vector/lava-style-dark-marble-stone-texture-design_1017-40542.jpg?w=1380&t=st=1695161165~exp=1695161765~hmac=2a0744e18b4a79541b7bcf5e628f4bdc6ccb0922b3a0ca00360ae0dd4142c34f");
+    
+     background-size:contain; 
+    }
+
+
 .item {
     background-color: #221f1f;
     color: #fff;
     border: 2px solid #a79683;
     border-radius: 10px;
-    width: 300px;
+    width: 300px; 
     padding: 20px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);

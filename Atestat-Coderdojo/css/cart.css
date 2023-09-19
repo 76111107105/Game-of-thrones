@@ -1,0 +1,156 @@
+body{
+background-image: url("https://img.freepik.com/free-photo/abstract-computer-wallpaper-fire-border-black-background_53876-147451.jpg?w=1380&t=st=1695156911~exp=1695157511~hmac=f7ad7c7bf02e110b317bb437c1f693a8b69e5d9fbd764c8c02f9ca590d12a65c");
+
+ background-size:contain; 
+}
+
+
+  /**
+  * ! style rules for label and some buttons
+  **/
+  
+  .text-center {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .HomeBtn,
+  .checkout,
+  .removeAll {
+    background-color: #212529;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .checkout {
+    box-shadow:inset 0px 1px 0px 0px #1c1b18;
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	background-color:#eae0c2;
+	border-radius:10px;
+	border:1px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	color:#505739;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+  }
+  .checkout:hover{
+    background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	background-color:#ccc2a6;
+  }
+  .removeAll {
+    box-shadow:inset 0px 1px 0px 0px #a6827e;
+	background:linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
+	background-color:#7d5d3b;
+	border-radius:10px;
+	border:1px solid #54381e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #4d3534;
+  }
+  .removeAll:hover{
+    background:linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
+	background-color:#634b30;
+
+  }
+  .bi-x-lg {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /**
+  * ! style rules for shopping-cart
+  **/
+  
+  .shopping-cart {
+    display: grid;
+    grid-template-columns: repeat(1, 500px);
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 100px;
+    
+  }
+  
+  /**
+  * ! style rules for cart-item
+  **/
+  
+  .cart-item {
+    display: flex;
+    border-radius: 5px;
+    display: flex;
+    transition: background-color 0.3s, transform 0.3s;
+    border: 2px solid #a79683;
+  }
+  .cart-item:hover {
+
+    background-color: #591313;
+    transform: scale(1.05);
+
+}
+  
+  .title-price-x {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .title-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .cart-item-price {
+    background-color: #212529;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 6px;
+  }
+
+  .cart-item img{
+    width: 200px;
+  }
+
+  .buttons {
+    background-color: #ae2b2b;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 16px;
+    margin-right: 4px;
+  }
+  
+  .bi-dash-lg {
+    color: rgb(0, 0, 0);
+  }
+  
+  .bi-plus-lg {
+    color: rgb(0, 0, 0);
+  }
+  .cart-item h3{
+    color: white;
+  }
+  .bi-x-lg{
+    color: white;
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+
+  .title-price{
+    margin-left: 20px;
+  }
