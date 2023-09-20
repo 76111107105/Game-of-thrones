@@ -87,3 +87,17 @@
     /* Add more responsive styles here */
   }
   
+
+  #submit {
+    background-color: #ff0000; /* Targaryen red */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #submit:hover {
+    background-color: #990000; /* Darker Targaryen red on hover */
+  }
