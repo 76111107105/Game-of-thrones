@@ -2,11 +2,11 @@ let shop = document.getElementById('shop');
 
 let shopItemsData = [
     {
-        id: "item1",
-        name: "The Iron Throne",
-        price: 50,
-        img: "https://m.media-amazon.com/images/I/81Y-9Em-bxL._AC_UL480_FMwebp_QL65_.jpg",
-        link: "http://127.0.0.1:5500/Atestat-Coderdojo/item1.html"
+        id: "item9",
+        name: "SYRAX FUNKO POP! VINYL FIGURE",
+        price: 0.01,
+        img: "https://wbshop.com/cdn/shop/products/HOTD-SYR_360x.png?v=1673380767",
+        link: "http://127.0.0.1:5500/Atestat-Coderdojo/item9.html"
     },
 ]
 
@@ -17,14 +17,14 @@ let basket = JSON.parse(localStorage.getItem("data")) || [];
 let generateShop = () => {
     return (shop.innerHTML = shopItemsData
         .map((x) => {
-            let { id, name, price, img } = x;
+            let { id, name, price, img,link } = x;
             let search = basket.find((x) => x.id === id) || [];
             return `
         <div id=product-id-${id} class="item">
           <img src="${img}" alt="">
 
           <div class="details">
-          <a href="http://127.0.0.1:5500/Atestat-Coderdojo/TheIronThrone.html">
+          <a href="${link}">
             <h3>${name}</h3></a>
 
             
@@ -35,11 +35,11 @@ let generateShop = () => {
             </p>
             <div class="list">
             <ol>
-                <li>Intricate</li>
-                <li>Authentic</li>
-                <li>Majestic</li>
-                <li>Resin-cast</li>
-                <li>Regal</li>
+            <li>Color: Multicolor</li>
+        <li>Material: Vinyl</li>
+        <li>Product size: 9 cm</li>
+        <li>Package size: 16 x 7 x 12 cm</li>
+    
             </ol>
             </div>
 
@@ -48,7 +48,9 @@ let generateShop = () => {
             </p>
 
             <h4>
-            Unleash the epic power struggle of Westeros right in the palm of your hand with The Iron Throne Collectible Toy. Crafted with meticulous attention to detail, this miniature replica captures the grandeur and intrigue of the Game of Thrones universe. Whether you're a loyal fan of the hit series or a collector of iconic pop culture artifacts, The Iron Throne Toy is the perfect addition to your collection.
+           
+            Introducing the Syrax Funko Pop! Vinyl Figure, a captivating embodiment of dragon majesty from the Game of Thrones universe. This collectible stands in miniature grandeur, featuring the legendary dragon Syrax in an adorable chibi-style form. Syrax's intricate details, from her scaled body to her delicate wings, are faithfully recreated, capturing her mythical essence. With her fiery eyes and elegant posture, this figurine radiates Targaryen power. Standing proudly at 4 inches tall, it's the perfect addition to any collector's shelf, allowing fans to bring the magic of dragons and House Targaryen to life in a charming and collectible way.
+            
             </h4>
             
             

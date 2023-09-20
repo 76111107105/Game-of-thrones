@@ -2,11 +2,11 @@ let shop = document.getElementById('shop');
 
 let shopItemsData = [
     {
-        id: "item1",
-        name: "The Iron Throne",
-        price: 50,
-        img: "https://m.media-amazon.com/images/I/81Y-9Em-bxL._AC_UL480_FMwebp_QL65_.jpg",
-        link: "http://127.0.0.1:5500/Atestat-Coderdojo/item1.html"
+        id: "item10",
+        name: "DAEMON TARGARYEN FUNKO POP! VINYL FIGURE",
+        price: 15,
+        img: "https://wbshop.com/cdn/shop/products/65607-HotD-GLAM-1-1-WEB_360x.png?v=1655817627",
+        link: "http://127.0.0.1:5500/Atestat-Coderdojo/item10.html"
     },
 ]
 
@@ -17,14 +17,14 @@ let basket = JSON.parse(localStorage.getItem("data")) || [];
 let generateShop = () => {
     return (shop.innerHTML = shopItemsData
         .map((x) => {
-            let { id, name, price, img } = x;
+            let { id, name, price, img,link } = x;
             let search = basket.find((x) => x.id === id) || [];
             return `
         <div id=product-id-${id} class="item">
           <img src="${img}" alt="">
 
           <div class="details">
-          <a href="http://127.0.0.1:5500/Atestat-Coderdojo/TheIronThrone.html">
+          <a href="${link}">
             <h3>${name}</h3></a>
 
             
@@ -35,11 +35,11 @@ let generateShop = () => {
             </p>
             <div class="list">
             <ol>
-                <li>Intricate</li>
-                <li>Authentic</li>
-                <li>Majestic</li>
-                <li>Resin-cast</li>
-                <li>Regal</li>
+            <li>Color: Multicolor</li>
+        <li>Material: Vinyl</li>
+        <li>Product size: 9 cm</li>
+        <li>Package size: 16 x 7 x 12 cm</li>
+    
             </ol>
             </div>
 
@@ -48,7 +48,8 @@ let generateShop = () => {
             </p>
 
             <h4>
-            Unleash the epic power struggle of Westeros right in the palm of your hand with The Iron Throne Collectible Toy. Crafted with meticulous attention to detail, this miniature replica captures the grandeur and intrigue of the Game of Thrones universe. Whether you're a loyal fan of the hit series or a collector of iconic pop culture artifacts, The Iron Throne Toy is the perfect addition to your collection.
+           
+            The Daemon Targaryen Funko Pop! Vinyl Figure captures the essence of the legendary dragonrider with remarkable detail. Standing proudly at 3.75 inches tall, this collectible radiates the charisma of House Targaryen's rogue prince. Daemon's signature armor, adorned with fiery dragon motifs, is faithfully recreated, while his iconic Valyrian steel sword, Dark Sister, gleams at his side. His silver hair cascades in waves, framing his brooding visage and fierce lavender eyes. From his intricate facial features to the minutiae of his attire, every aspect of Daemon Targaryen is impeccably rendered. A must-have for Game of Thrones devotees and Funko enthusiasts alike, it's a piece of Westerosi history immortalized in vinyl.
             </h4>
             
             

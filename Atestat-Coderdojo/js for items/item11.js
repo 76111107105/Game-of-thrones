@@ -2,11 +2,11 @@ let shop = document.getElementById('shop');
 
 let shopItemsData = [
     {
-        id: "item1",
-        name: "The Iron Throne",
-        price: 50,
-        img: "https://m.media-amazon.com/images/I/81Y-9Em-bxL._AC_UL480_FMwebp_QL65_.jpg",
-        link: "http://127.0.0.1:5500/Atestat-Coderdojo/item1.html"
+        id: "item11",
+        name: "TARGARYEN THREE HEADED DRAGON SIGIL CUFFLINKS",
+        price: 70,
+        img: "https://wbshop.com/cdn/shop/products/GT-TGDR3-SL_360x.png?v=1654717225",
+        link: "http://127.0.0.1:5500/Atestat-Coderdojo/item11.html"
     },
 ]
 
@@ -17,14 +17,14 @@ let basket = JSON.parse(localStorage.getItem("data")) || [];
 let generateShop = () => {
     return (shop.innerHTML = shopItemsData
         .map((x) => {
-            let { id, name, price, img } = x;
+            let { id, name, price, img,link } = x;
             let search = basket.find((x) => x.id === id) || [];
             return `
         <div id=product-id-${id} class="item">
           <img src="${img}" alt="">
 
           <div class="details">
-          <a href="http://127.0.0.1:5500/Atestat-Coderdojo/TheIronThrone.html">
+          <a href="${link}">
             <h3>${name}</h3></a>
 
             
@@ -35,11 +35,14 @@ let generateShop = () => {
             </p>
             <div class="list">
             <ol>
-                <li>Intricate</li>
-                <li>Authentic</li>
-                <li>Majestic</li>
-                <li>Resin-cast</li>
-                <li>Regal</li>
+            <li>Measures approx. 3/4" (W) x 3/4" (H)</li>
+            <li>Made from plated base metal</li>
+            <li>Closure: Knopfleiste</li>
+            <li>Model: GT-TGDR-SL</li>
+            <li>Comes as a gift, presented in a Game of Thrones gift box</li>
+            <li>Packaging may vary from the pictures shown.</li>
+            <li>100% officially licensed merchandise.</li>
+    
             </ol>
             </div>
 
@@ -48,8 +51,8 @@ let generateShop = () => {
             </p>
 
             <h4>
-            Unleash the epic power struggle of Westeros right in the palm of your hand with The Iron Throne Collectible Toy. Crafted with meticulous attention to detail, this miniature replica captures the grandeur and intrigue of the Game of Thrones universe. Whether you're a loyal fan of the hit series or a collector of iconic pop culture artifacts, The Iron Throne Toy is the perfect addition to your collection.
-            </h4>
+           
+            Elevate your style with Targaryen Three-Headed Dragon Seal Cufflinks. Crafted in exquisite detail, these cufflinks feature the iconic Targaryen sigil in miniature form. Made from polished silver-tone metal, they add a touch of regal sophistication to any attire, making them the perfect accessory for Game of Thrones enthusiasts.            </h4>
             
             
             

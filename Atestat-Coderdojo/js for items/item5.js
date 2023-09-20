@@ -2,11 +2,11 @@ let shop = document.getElementById('shop');
 
 let shopItemsData = [
     {
-        id: "item1",
-        name: "The Iron Throne",
-        price: 50,
-        img: "https://m.media-amazon.com/images/I/81Y-9Em-bxL._AC_UL480_FMwebp_QL65_.jpg",
-        link: "http://127.0.0.1:5500/Atestat-Coderdojo/item1.html"
+        id: "item5",
+        name: "CARAXES FIGURE",
+        price: 55,
+        img: "https://wbshop.com/cdn/shop/products/WB100-MC-CR-FT-MF_d26e19bc-5525-461b-b177-e17d78741c56_900x.jpg?v=1685539218",
+        link: "http://127.0.0.1:5500/Atestat-Coderdojo/item5.html"
     },
 ]
 
@@ -17,14 +17,14 @@ let basket = JSON.parse(localStorage.getItem("data")) || [];
 let generateShop = () => {
     return (shop.innerHTML = shopItemsData
         .map((x) => {
-            let { id, name, price, img } = x;
+            let { id, name, price, img,link } = x;
             let search = basket.find((x) => x.id === id) || [];
             return `
         <div id=product-id-${id} class="item">
           <img src="${img}" alt="">
 
           <div class="details">
-          <a href="http://127.0.0.1:5500/Atestat-Coderdojo/TheIronThrone.html">
+          <a href="${link}">
             <h3>${name}</h3></a>
 
             
@@ -35,11 +35,13 @@ let generateShop = () => {
             </p>
             <div class="list">
             <ol>
-                <li>Intricate</li>
-                <li>Authentic</li>
-                <li>Majestic</li>
-                <li>Resin-cast</li>
-                <li>Regal</li>
+            <li>Weight: 1.0000 kg</li>
+        <li>Size in cm: 20</li>
+        <li>Theme: House of the Dragon</li>
+        <li>Product Type: Statues</li>
+        <li>Packaging: Window Box</li>
+        <li>Material: Plastic</li>
+    
             </ol>
             </div>
 
@@ -48,7 +50,14 @@ let generateShop = () => {
             </p>
 
             <h4>
-            Unleash the epic power struggle of Westeros right in the palm of your hand with The Iron Throne Collectible Toy. Crafted with meticulous attention to detail, this miniature replica captures the grandeur and intrigue of the Game of Thrones universe. Whether you're a loyal fan of the hit series or a collector of iconic pop culture artifacts, The Iron Throne Toy is the perfect addition to your collection.
+           
+            Fiercest of all the young dragons in the Dragonpit, Caraxes was once the mount of Prince Aemon Targaryen, son of Jaeherys and uncle to both Daemon and Viserys I, but he became Daemon's mount by the year 105 AC. Nicknamed the Blood Wyrm for both his color and his brutal tendencies-he is savage, cunning and battle-tested-Caraxes has a noticeable appetite."
+
+            <br><br>Rider: Daemon Targaryen
+            <br>Incredibly detailed figure of Caraxes from the first season of the HBO series Game of Thrones House of the Dragon. Includes House of the Dragon sculpted base. Dragon comes with large attachable wings. Figure is showcased in House of the Dragon window box packaging.
+
+
+
             </h4>
             
             

@@ -41,11 +41,11 @@ Site-ul trebuie sa aiba :
         <form name="submit-to-google-sheet">
           <label>
             <span class="fname">First Name <span class="required">*</span></span>
-            <input type="text" name="fname">
+            <input type="text" name="fname" id="fname">
           </label>
           <label>
             <span class="lname">Last Name <span class="required">*</span></span>
-            <input type="text" name="lname">
+            <input type="text" name="lname" id="lname">
           </label>
          
           <label>
@@ -305,30 +305,31 @@ Site-ul trebuie sa aiba :
           </label>
           <label>
             <span>Street Address <span class="required">*</span></span>
-            <input type="text" name="houseadd" placeholder="House number and street name" required>
+            <input type="text" name="street" id="street" required>
           </label>
           
           <label>
             <span>Town / City <span class="required">*</span></span>
-            <input type="text" name="city"> 
+            <input type="text" name="city" id="city"> 
           </label>
           <label>
             <span>State / County <span class="required">*</span></span>
-            <input type="text" name="city"> 
+            <input type="text" name="city2" id="city2"> 
           </label>
           
           <label>
             <span>Phone <span class="required">*</span></span>
-            <input type="tel" name="city"> 
+            <input type="tel" name="phone" id="phone"> 
           </label>
           <label>
             <span>Email Address <span class="required">*</span></span>
-            <input type="email" name="city"> 
+            <input type="email" name="email" id="email"> 
           </label>
+          <button type="submit" id="submit">Place Order</button>
           <!--<button type="button">Place Order</button>-->
         <span id="msg"></span>
         </form>
-
+<!-- Yorder
         <div class="Yorder">
           <div>
             <input type="radio" name="dbt" value="cd"> Cash on Delivery
@@ -339,7 +340,7 @@ Site-ul trebuie sa aiba :
             </span>
           </div>
           <button type="button">Place Order</button>
-        </div><!-- Yorder -->
+        </div>  Yorder -->
        </div>
       </div>
    
@@ -354,25 +355,17 @@ Site-ul trebuie sa aiba :
 
 
 </body>
-  
+
   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzIUrAFml1vJESPFEiq4LR1MxaxFMTnI1aQi-ddZF95k3YdAmk7NjArrcONL-5himeufQ/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwCgHtF9P1Nze6YYVMfhV_uoUc5sc58Wx7sf73_Te94oVg3F_0n2Wv09LssdT1Uh6u9/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById('msg')
   
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Thank you for your message!"
-            setTimeout(function() {
-               msg.innerHTML = ""
-            }, 1000)
-            form.reset()
-        }
-        )
-        .catch(error => console.error('Error!', error.message))
-    })
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
   </script>
-<script src="js/cartforall.js"></script>
 </html>

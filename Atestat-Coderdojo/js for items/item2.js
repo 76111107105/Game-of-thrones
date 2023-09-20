@@ -2,11 +2,11 @@ let shop = document.getElementById('shop');
 
 let shopItemsData = [
     {
-        id: "item1",
-        name: "The Iron Throne",
-        price: 50,
-        img: "https://m.media-amazon.com/images/I/81Y-9Em-bxL._AC_UL480_FMwebp_QL65_.jpg",
-        link: "http://127.0.0.1:5500/Atestat-Coderdojo/item1.html"
+        id: "item2",
+        name: "Queen Comforter",
+        price: 45,
+        img: "https://m.media-amazon.com/images/I/71RmzzI017L.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+        link: "http://127.0.0.1:5500/Atestat-Coderdojo/item2.html"
     },
 ]
 
@@ -24,7 +24,7 @@ let generateShop = () => {
           <img src="${img}" alt="">
 
           <div class="details">
-          <a href="http://127.0.0.1:5500/Atestat-Coderdojo/TheIronThrone.html">
+          <a href="http://127.0.0.1:5500/Atestat-Coderdojo/item2.html">
             <h3>${name}</h3></a>
 
             
@@ -35,11 +35,12 @@ let generateShop = () => {
             </p>
             <div class="list">
             <ol>
-                <li>Intricate</li>
-                <li>Authentic</li>
-                <li>Majestic</li>
-                <li>Resin-cast</li>
-                <li>Regal</li>
+            <li><strong>Size:</strong> Queen</li>
+            <li><strong>Included components:</strong> Lace pillowcases, quilts</li>
+            <li><strong>Color:</strong> Multi - Game of Thrones Game of Thrones</li>
+            <li><strong>Age range (description):</strong> baby</li>
+            <li><strong>Style:</strong> Modern</li>
+    
             </ol>
             </div>
 
@@ -48,7 +49,9 @@ let generateShop = () => {
             </p>
 
             <h4>
-            Unleash the epic power struggle of Westeros right in the palm of your hand with The Iron Throne Collectible Toy. Crafted with meticulous attention to detail, this miniature replica captures the grandeur and intrigue of the Game of Thrones universe. Whether you're a loyal fan of the hit series or a collector of iconic pop culture artifacts, The Iron Throne Toy is the perfect addition to your collection.
+           
+            Transform your bedroom into the Seven Kingdoms with this stunning Game of Thrones-themed bedsheet. Featuring intricate illustrations of iconic Westerosi sigils and landmarks, this bedsheet is a must-have for any fan of the epic fantasy series. Made from soft, high-quality fabric, it ensures both comfort and style fit for a king or queen. Drift into dreams of dragons, knights, and intrigue as you snuggle beneath this captivating Game of Thrones bedsheet. Embrace the world of Westeros every night with this enchanting addition to your bedroom decor.
+
             </h4>
             
             

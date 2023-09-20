@@ -2,11 +2,11 @@ let shop = document.getElementById('shop');
 
 let shopItemsData = [
     {
-        id: "item1",
-        name: "The Iron Throne",
-        price: 50,
-        img: "https://m.media-amazon.com/images/I/81Y-9Em-bxL._AC_UL480_FMwebp_QL65_.jpg",
-        link: "http://127.0.0.1:5500/Atestat-Coderdojo/item1.html"
+        id: "item8",
+        name: "CARAXES MUG",
+        price: 17,
+        img: "https://wbshop.com/cdn/shop/files/HOTD-MUGcopy_ebccd32c-cdd3-47b2-9805-334e0ecad355_900x.jpg?v=1683923482",
+        link: "http://127.0.0.1:5500/Atestat-Coderdojo/item8.html"
     },
 ]
 
@@ -17,14 +17,14 @@ let basket = JSON.parse(localStorage.getItem("data")) || [];
 let generateShop = () => {
     return (shop.innerHTML = shopItemsData
         .map((x) => {
-            let { id, name, price, img } = x;
+            let { id, name, price, img,link } = x;
             let search = basket.find((x) => x.id === id) || [];
             return `
         <div id=product-id-${id} class="item">
           <img src="${img}" alt="">
 
           <div class="details">
-          <a href="http://127.0.0.1:5500/Atestat-Coderdojo/TheIronThrone.html">
+          <a href="${link}">
             <h3>${name}</h3></a>
 
             
@@ -35,11 +35,13 @@ let generateShop = () => {
             </p>
             <div class="list">
             <ol>
-                <li>Intricate</li>
-                <li>Authentic</li>
-                <li>Majestic</li>
-                <li>Resin-cast</li>
-                <li>Regal</li>
+            <li>Officially licensed House of The Dragon product</li>
+        <li>High-quality design</li>
+        <li>Measures 3.5” tall; 2.875” wide at the base, and 3.625” at the top</li>
+        <li>Microwave safe and top-rack dishwasher safe</li>
+        <li>Satisfaction guaranteed</li>
+        <li>Great gift idea!</li>
+    
             </ol>
             </div>
 
@@ -48,7 +50,9 @@ let generateShop = () => {
             </p>
 
             <h4>
-            Unleash the epic power struggle of Westeros right in the palm of your hand with The Iron Throne Collectible Toy. Crafted with meticulous attention to detail, this miniature replica captures the grandeur and intrigue of the Game of Thrones universe. Whether you're a loyal fan of the hit series or a collector of iconic pop culture artifacts, The Iron Throne Toy is the perfect addition to your collection.
+           
+            
+The House of the Dragon Caraxes Mug embodies the essence of Targaryen might. Crafted with meticulous artistry, this mug showcases Caraxes, the Black Dread, in fierce detail. Against a jet-black backdrop, the dragon's crimson eyes and scales stand out, evoking its fiery nature. Sip your favorite beverage in the company of this legendary dragon, celebrating the mythical allure of House Targaryen.
             </h4>
             
             

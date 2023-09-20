@@ -2,11 +2,11 @@ let shop = document.getElementById('shop');
 
 let shopItemsData = [
     {
-        id: "item1",
-        name: "The Iron Throne",
-        price: 50,
-        img: "https://m.media-amazon.com/images/I/81Y-9Em-bxL._AC_UL480_FMwebp_QL65_.jpg",
-        link: "http://127.0.0.1:5500/Atestat-Coderdojo/item1.html"
+        id: "item3",
+        name: "Casual Shirt",
+        price: 23,
+        img: "https://m.media-amazon.com/images/I/A13usaonutL._CLa%7C2140%2C2000%7C81-kcSBPJbL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UX385_.png",
+        link: "http://127.0.0.1:5500/Atestat-Coderdojo/item3.html"
     },
 ]
 
@@ -17,14 +17,14 @@ let basket = JSON.parse(localStorage.getItem("data")) || [];
 let generateShop = () => {
     return (shop.innerHTML = shopItemsData
         .map((x) => {
-            let { id, name, price, img } = x;
+            let { id, name, price, img,link } = x;
             let search = basket.find((x) => x.id === id) || [];
             return `
         <div id=product-id-${id} class="item">
           <img src="${img}" alt="">
 
           <div class="details">
-          <a href="http://127.0.0.1:5500/Atestat-Coderdojo/TheIronThrone.html">
+          <a href="${link}">
             <h3>${name}</h3></a>
 
             
@@ -35,11 +35,17 @@ let generateShop = () => {
             </p>
             <div class="list">
             <ol>
-                <li>Intricate</li>
-                <li>Authentic</li>
-                <li>Majestic</li>
-                <li>Resin-cast</li>
-                <li>Regal</li>
+            <li><strong>Brand:</strong> Game of Thrones</li>
+        <li><strong>Color:</strong> Black</li>
+        <li><strong>Suitable Type:</strong> Regular Fit</li>
+        <li><strong>Style:</strong> Classic</li>
+        <li><strong>Collar Style:</strong> Boat Neck</li>
+        <li><strong>Age Range (description):</strong> Adult</li>
+        <li><strong>Material:</strong> Cotton</li>
+        <li><strong>Sleeve Type:</strong> Short Sleeve</li>
+        <li><strong>Null:</strong> 100% Cotton</li>
+        <li><strong>Case:</strong> Party</li>
+    
             </ol>
             </div>
 
@@ -48,7 +54,9 @@ let generateShop = () => {
             </p>
 
             <h4>
-            Unleash the epic power struggle of Westeros right in the palm of your hand with The Iron Throne Collectible Toy. Crafted with meticulous attention to detail, this miniature replica captures the grandeur and intrigue of the Game of Thrones universe. Whether you're a loyal fan of the hit series or a collector of iconic pop culture artifacts, The Iron Throne Toy is the perfect addition to your collection.
+           
+            Channel the legendary House Targaryen's power and majesty with this striking T-shirt. Proudly displaying the iconic Targaryen dragon emblem in bold crimson and black, this shirt is a homage to a lineage known for its unmatched strength and determination. Created from a blend of soft, breathable fabrics, it not only ensures maximum comfort but also showcases your unwavering loyalty to the house that once reigned supreme over the Seven Kingdoms.
+            
             </h4>
             
             

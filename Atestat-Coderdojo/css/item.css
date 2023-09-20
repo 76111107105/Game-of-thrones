@@ -130,3 +130,8 @@ body{
       font-size: 16px;
       transition: color 0.3s;
   }
+
+.list{
+    text-align: left;
+    font-size: 12px;
+}

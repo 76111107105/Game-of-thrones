@@ -2,11 +2,11 @@ let shop = document.getElementById('shop');
 
 let shopItemsData = [
     {
-        id: "item1",
-        name: "The Iron Throne",
-        price: 50,
-        img: "https://m.media-amazon.com/images/I/81Y-9Em-bxL._AC_UL480_FMwebp_QL65_.jpg",
-        link: "http://127.0.0.1:5500/Atestat-Coderdojo/item1.html"
+        id: "item12",
+        name: "RHAENYRA TARGARYEN FUNKO POP! VINYL FIGURE",
+        price: 15,
+        img: "https://wbshop.com/cdn/shop/products/65604-Rhaenyra-Targaryen-GLAM-1-1-WEB1-_11_360x.png?v=1672178147",
+        link: "http://127.0.0.1:5500/Atestat-Coderdojo/item12.html"
     },
 ]
 
@@ -17,14 +17,14 @@ let basket = JSON.parse(localStorage.getItem("data")) || [];
 let generateShop = () => {
     return (shop.innerHTML = shopItemsData
         .map((x) => {
-            let { id, name, price, img } = x;
+            let { id, name, price, img,link } = x;
             let search = basket.find((x) => x.id === id) || [];
             return `
         <div id=product-id-${id} class="item">
           <img src="${img}" alt="">
 
           <div class="details">
-          <a href="http://127.0.0.1:5500/Atestat-Coderdojo/TheIronThrone.html">
+          <a href="${link}">
             <h3>${name}</h3></a>
 
             
@@ -35,11 +35,11 @@ let generateShop = () => {
             </p>
             <div class="list">
             <ol>
-                <li>Intricate</li>
-                <li>Authentic</li>
-                <li>Majestic</li>
-                <li>Resin-cast</li>
-                <li>Regal</li>
+            <li>Color: Multicolor</li>
+        <li>Material: Vinyl</li>
+        <li>Product size: 9 cm</li>
+        <li>Package size: 16 x 7 x 12 cm</li>
+    
             </ol>
             </div>
 
@@ -48,7 +48,8 @@ let generateShop = () => {
             </p>
 
             <h4>
-            Unleash the epic power struggle of Westeros right in the palm of your hand with The Iron Throne Collectible Toy. Crafted with meticulous attention to detail, this miniature replica captures the grandeur and intrigue of the Game of Thrones universe. Whether you're a loyal fan of the hit series or a collector of iconic pop culture artifacts, The Iron Throne Toy is the perfect addition to your collection.
+           
+            The Rhaenyra Targaryen Funko Pop! Vinyl Figure brings the tumultuous world of Westeros to life in a collectible masterpiece. Standing at a charming 3.75 inches, this figurine encapsulates Rhaenyra's fierce spirit and indomitable presence. Her intricately detailed costume, complete with dragon adornments, mirrors her royal lineage as the Princess of Dragonstone. With her signature silver hair cascading down, she carries the weight of her Targaryen heritage. The vibrant paintwork captures every nuance, from her determined expression to the intricacies of her attire. This Funko Pop! is not just a keepsake; it's a portal to the intrigues of House Targaryen and a must-have for Game of Thrones devotees.            
             </h4>
             
             

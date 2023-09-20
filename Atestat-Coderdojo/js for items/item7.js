@@ -2,11 +2,11 @@ let shop = document.getElementById('shop');
 
 let shopItemsData = [
     {
-        id: "item1",
-        name: "The Iron Throne",
-        price: 50,
-        img: "https://m.media-amazon.com/images/I/81Y-9Em-bxL._AC_UL480_FMwebp_QL65_.jpg",
-        link: "http://127.0.0.1:5500/Atestat-Coderdojo/item1.html"
+        id: "item7",
+        name: "CROWN HOUSE GOLD ENAMEL PIN",
+        price: 15,
+        img: "https://wbshop.com/cdn/shop/products/HOTDCROWNPIN01--1-of-4_360x.jpg?v=1678122105",
+        link: "http://127.0.0.1:5500/Atestat-Coderdojo/item7.html"
     },
 ]
 
@@ -17,14 +17,14 @@ let basket = JSON.parse(localStorage.getItem("data")) || [];
 let generateShop = () => {
     return (shop.innerHTML = shopItemsData
         .map((x) => {
-            let { id, name, price, img } = x;
+            let { id, name, price, img,link } = x;
             let search = basket.find((x) => x.id === id) || [];
             return `
         <div id=product-id-${id} class="item">
           <img src="${img}" alt="">
 
           <div class="details">
-          <a href="http://127.0.0.1:5500/Atestat-Coderdojo/TheIronThrone.html">
+          <a href="${link}">
             <h3>${name}</h3></a>
 
             
@@ -35,11 +35,12 @@ let generateShop = () => {
             </p>
             <div class="list">
             <ol>
-                <li>Intricate</li>
-                <li>Authentic</li>
-                <li>Majestic</li>
-                <li>Resin-cast</li>
-                <li>Regal</li>
+            <li>Officially licensed House of The Dragon product</li>
+            <li>High quality design</li>
+            <li>HOTDCROWNPIN01</li>
+            <li>Satisfaction guaranteed</li>
+            <li>Great gift idea!</li>
+    
             </ol>
             </div>
 
@@ -48,7 +49,9 @@ let generateShop = () => {
             </p>
 
             <h4>
-            Unleash the epic power struggle of Westeros right in the palm of your hand with The Iron Throne Collectible Toy. Crafted with meticulous attention to detail, this miniature replica captures the grandeur and intrigue of the Game of Thrones universe. Whether you're a loyal fan of the hit series or a collector of iconic pop culture artifacts, The Iron Throne Toy is the perfect addition to your collection.
+           
+            The House of the Dragon Golden Crown Pin epitomizes regal splendor in every detail. Crafted with exquisite precision, this pin is a miniature masterpiece that pays homage to the Targaryen legacy. Gleaming in rich, lustrous gold, it features the iconic Targaryen three-headed dragon sigil, a symbol of power and fire, intricately etched upon a circular backdrop. Its delicate yet sturdy design ensures it can adorn lapels, sashes, or garments with ease, adding an aura of noble authority to any outfit. The pin is a tangible link to the epic world of Game of Thrones, making it a coveted collectible for fans and a mark of distinction for Targaryen enthusiasts.
+
             </h4>
             
             

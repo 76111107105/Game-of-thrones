@@ -2,11 +2,11 @@ let shop = document.getElementById('shop');
 
 let shopItemsData = [
     {
-        id: "item1",
-        name: "The Iron Throne",
-        price: 50,
-        img: "https://m.media-amazon.com/images/I/81Y-9Em-bxL._AC_UL480_FMwebp_QL65_.jpg",
-        link: "http://127.0.0.1:5500/Atestat-Coderdojo/item1.html"
+        id: "item6",
+        name: "SYRAX FIGURE",
+        price: 65,
+        img: "https://wbshop.com/cdn/shop/products/WB100-MC-SY-FT-MF_359e4103-13c4-4083-8d51-e00720365440_360x.jpg?v=1685539282",
+        link: "http://127.0.0.1:5500/Atestat-Coderdojo/item6.html"
     },
 ]
 
@@ -17,14 +17,14 @@ let basket = JSON.parse(localStorage.getItem("data")) || [];
 let generateShop = () => {
     return (shop.innerHTML = shopItemsData
         .map((x) => {
-            let { id, name, price, img } = x;
+            let { id, name, price, img,link } = x;
             let search = basket.find((x) => x.id === id) || [];
             return `
         <div id=product-id-${id} class="item">
           <img src="${img}" alt="">
 
           <div class="details">
-          <a href="http://127.0.0.1:5500/Atestat-Coderdojo/TheIronThrone.html">
+          <a href="${link}">
             <h3>${name}</h3></a>
 
             
@@ -35,11 +35,12 @@ let generateShop = () => {
             </p>
             <div class="list">
             <ol>
-                <li>Intricate</li>
-                <li>Authentic</li>
-                <li>Majestic</li>
-                <li>Resin-cast</li>
-                <li>Regal</li>
+            <li>Material: PVC</li>
+            <li>Size: about 20cm</li>
+            <li>Product Weight: about 1800g</li>
+            <li>Applicable Age: 3 years old and above</li>
+            <li>Package: No Retail Box</li>
+    
             </ol>
             </div>
 
@@ -48,7 +49,9 @@ let generateShop = () => {
             </p>
 
             <h4>
-            Unleash the epic power struggle of Westeros right in the palm of your hand with The Iron Throne Collectible Toy. Crafted with meticulous attention to detail, this miniature replica captures the grandeur and intrigue of the Game of Thrones universe. Whether you're a loyal fan of the hit series or a collector of iconic pop culture artifacts, The Iron Throne Toy is the perfect addition to your collection.
+           
+            Behold the exquisite Syrax Dragon Figurine, a masterpiece of fantasy craftsmanship. This finely detailed sculpture captures the essence of House Targaryen's cherished dragon companion, Syrax, with meticulous precision. Crafted from high-quality resin, the figurine showcases Syrax's graceful form, adorned with vivid, iridescent scales and wings poised for flight. Every intricate feature, from her elegant horns to her fiery eyes, evokes the awe-inspiring power of dragons in the world of Westeros. Whether displayed proudly on a shelf or as the centerpiece of a collection, the Syrax Dragon Figurine is a testament to the mythical beauty and grandeur of Game of Thrones lore.
+
             </h4>
             
             

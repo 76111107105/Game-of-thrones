@@ -13,7 +13,7 @@ let generateShop = () => {
         <div id=product-id-${id} class="item">
           <img src="${img}" alt="">
           <div class="details">
-          <a href="${link}">
+          <a href="${link}"> 
           <h3>${name}</h3></a>
             <div class="price-quantity">
               <h2>$ ${price}</h2>

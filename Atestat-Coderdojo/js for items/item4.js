@@ -2,11 +2,12 @@ let shop = document.getElementById('shop');
 
 let shopItemsData = [
     {
-        id: "item1",
-        name: "The Iron Throne",
-        price: 50,
-        img: "https://m.media-amazon.com/images/I/81Y-9Em-bxL._AC_UL480_FMwebp_QL65_.jpg",
-        link: "http://127.0.0.1:5500/Atestat-Coderdojo/item1.html"
+        id: "item4",
+        name: "House Targaryen mug",
+        price: 25,
+        img: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQyzAMq-08pzXsJXgidxwjIYgFY31g5K2pkOc1zfIyyyXk0LkGOPgtv6zuNC-Lpvkg7ypDSQsU63ERExTunvRuKU_d-C6yCnuFsQH9Tnh71XoocGGImnJub&usqp=CAc",
+        link: "http://127.0.0.1:5500/Atestat-Coderdojo/item4.html",
+        desc: "Used since ancient times, in various rituals or to beautify with its elegance the place where it is placed, the cup or chalice is a special decoration, with an interesting history, which conveys a story.Whether you will use it for decoration, or whether it will be the carrier of the life-giving liquid (or inspiration), it will surely delight your heart. Hand-painted with great attention to detail, the cup looks like it's made of solid steel. The outer portion of the cup is made of a high quality resin, with a very fine finish. A perfect gift for any knight, any enthusiast of the medieval era!"
     },
 ]
 
@@ -17,14 +18,14 @@ let basket = JSON.parse(localStorage.getItem("data")) || [];
 let generateShop = () => {
     return (shop.innerHTML = shopItemsData
         .map((x) => {
-            let { id, name, price, img } = x;
+            let { id, name, price, img,link,desc } = x;
             let search = basket.find((x) => x.id === id) || [];
             return `
         <div id=product-id-${id} class="item">
           <img src="${img}" alt="">
 
           <div class="details">
-          <a href="http://127.0.0.1:5500/Atestat-Coderdojo/TheIronThrone.html">
+          <a href="${link}">
             <h3>${name}</h3></a>
 
             
@@ -35,11 +36,12 @@ let generateShop = () => {
             </p>
             <div class="list">
             <ol>
-                <li>Intricate</li>
-                <li>Authentic</li>
-                <li>Majestic</li>
-                <li>Resin-cast</li>
-                <li>Regal</li>
+            <li>Material: Resin</li>
+        <li>Decoration: 360 degrees</li>
+        <li>Grammage~: 300g</li>
+        <li>Height~: 105mm</li>
+        <li>Volume~: 400 ml</li>
+    
             </ol>
             </div>
 
@@ -48,7 +50,9 @@ let generateShop = () => {
             </p>
 
             <h4>
-            Unleash the epic power struggle of Westeros right in the palm of your hand with The Iron Throne Collectible Toy. Crafted with meticulous attention to detail, this miniature replica captures the grandeur and intrigue of the Game of Thrones universe. Whether you're a loyal fan of the hit series or a collector of iconic pop culture artifacts, The Iron Throne Toy is the perfect addition to your collection.
+           
+            ${desc}
+            
             </h4>
             
             
