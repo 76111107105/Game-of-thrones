@@ -1,5 +1,5 @@
 body{
-background-image: url("https://img.freepik.com/free-photo/abstract-computer-wallpaper-fire-border-black-background_53876-147451.jpg?w=1380&t=st=1695156911~exp=1695157511~hmac=f7ad7c7bf02e110b317bb437c1f693a8b69e5d9fbd764c8c02f9ca590d12a65c");
+background-image: url("https://media.istockphoto.com/id/113494458/photo/fire-isolated-over-black-background.jpg?s=1024x1024&w=is&k=20&c=LC8Y2jgXw8eC1tpmninGWffmh0MrtOj74bzu_XMmtXc=");
  /*sa dau no repeat la imagine*/
  background-size:contain; 
 } 
@@ -154,3 +154,14 @@ background-image: url("https://img.freepik.com/free-photo/abstract-computer-wall
   .title-price{
     margin-left: 20px;
   }
+
+  footer {
+    background-color: #67331E;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    width: 100%;
+}
