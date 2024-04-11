@@ -98,6 +98,9 @@
     cursor: pointer;
   }
   
-  #submit:hover {
-    background-color: #990000; /* Darker Targaryen red on hover */
+  /*#submit:hover {
+    background-color: #990000; /* Darker Targaryen red on hover 
+  }*/
+  #button:hover{
+    background-color: #f3f2f2;
   }

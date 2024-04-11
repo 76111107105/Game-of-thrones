@@ -47,8 +47,6 @@ let generateShop = () => {
             <br>
             Our House of the Dragon merchandise tumbler is engineered and tested against leading brands. Our Tumblers match performance all day long and with our splash proof closable lid you can keep your drinks insulated and protected for longer! A wonderful game of thrones mug which you cannot afford to miss out on.
             <br>
-            Your new Game of Thrones merchandise Daemon Targaryen tumbler will have everyone raving about it and asking you where you got it. Our 12oz travel mug with lid is versatile, sleek and stylish. The double wall insulated design makes it great for a warm drink on a cool day or a cold drink on a hot summer day.
-            
             </h4>
             
             
