@@ -120,7 +120,7 @@ let TotalAmount = () => {
     // console.log(amount);
     label.innerHTML = `
     <h2>Total Bill : $ ${amount}</h2>
-    <a href="http://127.0.0.1:5500/Atestat-Coderdojo/CheckOut.html"><button class="checkout">Checkout</button></a>
+    <a href="http://info.tm.edu.ro:8088/~ilibotean/checkout.php"><button class="checkout">Checkout</button></a>
     <button onclick="clearCart()" class="removeAll">Clear Cart</button>
     `;
   } else return;

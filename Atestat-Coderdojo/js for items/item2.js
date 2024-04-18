@@ -54,10 +54,6 @@ let generateShop = () => {
 
             </h4>
             
-            
-            
-            
-            
             <div class="price-quantity">
               <h2>$ ${price}</h2>
               <div class="buttons">
